@@ -1,0 +1,95 @@
+* {
+  border: none;
+  border-radius: 0;
+  font-family: "Hack Nerd Font";
+  font-size: 14px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: rgba(8, 16, 24, 0.7);
+  border-radius: 10px;
+}
+
+#workspaces {
+  background-color: rgba(0, 255, 195, 0.1);
+  border-radius: 20px;
+  margin: 6px;
+  padding: 0 12px;
+}
+
+#workspaces button {
+  padding: 0;
+  margin: 4px 3px;
+  color: #19f9d8;
+  border-radius: 50%;
+  min-width: 18px;
+  min-height: 18px;
+}
+
+#workspaces button.active {
+  color: #081018;
+  background: #00ffc3;
+  border-radius: 10px;
+  padding: 0 12px;
+}
+
+#workspaces button.focused {
+  color: #d0fefe;
+  background: #007e6a;
+  border-radius: 10px;
+}
+
+#workspaces button.urgent {
+  color: #ff5e78;
+}
+
+#workspaces button:hover {
+  background: #004e41;
+  color: #d0fefe;
+  border-radius: 10px;
+}
+
+#clock,
+#custom-date,
+#tray,
+#custom-notification {
+  background-color: rgba(0, 255, 195, 0.08);
+  padding-left: 9px;
+  padding-right: 14px;
+  margin: 4px 4px;
+  border-radius: 10px;
+}
+
+#clock {
+  color: #d0fefe;
+  font-weight: bold;
+  font-size: 15px;
+  padding-right: 7px;
+  min-width: 90px;
+}
+
+#custom-date {
+  color: #19f9d8;
+  padding-left: 16px;
+}
+
+#custom-notification {
+  color: #00ffc3;
+  font-size: 16px;
+}
+
+#tray {
+  background-color: rgba(0, 255, 195, 0.08);
+  padding-right: 9px;
+  padding-left: 9px;
+}
+
+#tray > .passive {
+  -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+  -gtk-icon-effect: highlight;
+  background-color: #ff5e78;
+}

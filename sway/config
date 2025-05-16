@@ -1,0 +1,60 @@
+output HDMI-A-1 {
+    mode 1920x1080@100Hz
+    pos 0 0
+    adaptive_sync on    
+}
+
+exec /usr/libexec/polkit-gnome-authentication-agent-1 
+exec waybar
+
+
+
+
+font pango:Hack Nerd Font 12
+gaps outer 2
+gaps inner 10
+
+title_align center
+
+output * bg ~/Документы/wallpaper/wallhaven-z8oe8g.png fill
+
+workspace_layout default     
+default_orientation horizontal 
+
+
+client.focused          #00ffd2CC #00ffd2cc #0a0f1bcc 
+client.focused_inactive #11202a #11202a #0a0f1b 
+client.unfocused        #11202a #11202a #0a0f1b 
+client.urgent           #ff0055 #ff0055 #0a0f1b 
+client.placeholder      #333333 #333333 #0a0f1b 
+
+
+
+
+
+corner_radius 10
+
+#---Настройки теней----
+shadows true
+shadow_blur_radius 15
+shadow_color #00000060
+
+#---Настройки размытия-
+blur true
+blur_passes 2
+blur_radius 2
+
+input "type:keyboard" {
+    xkb_layout "us,ru"
+    xkb_options "grp:alt_shift_toggle"
+    xkb_numlock enable
+}
+
+include ~/.config/sway/programs.conf
+
+
+include ~/.config/sway/bind.conf
+
+
+
+include /etc/sway/config.d/*
